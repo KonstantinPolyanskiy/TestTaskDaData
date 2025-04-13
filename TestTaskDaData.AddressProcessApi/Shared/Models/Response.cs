@@ -54,6 +54,9 @@ public class DaDataResponse
     
     [JsonPropertyName("geo_lon")]
     public string? GeoLon { get; set; }
+    
+    [JsonPropertyName("house_flat_count")]
+    public int? HouseFlatCount { get; set; }
 }
 
 /// <summary>
@@ -74,5 +77,5 @@ public class ProcessedAddress
     /// <summary>
     /// Доп. поле - приблизительное кол-во жильцов в доме
     /// </summary>
-    public int? ApproxHouseResidents { get; set; }
+    public double? ApproxHouseResidents { get; set; }
 }
