@@ -59,7 +59,7 @@ public class DaDataResponse
 /// <summary>
 /// Ответ нашего сервиса 
 /// </summary>
-public class ServiceResponse
+public class ProcessedAddress
 {
     #region Стандартные поля из ТЗ
 
