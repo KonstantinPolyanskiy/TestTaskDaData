@@ -19,7 +19,7 @@ TestTaskDaData — сервис стандартизации адреса с п�
 
 ## Архитектура
 
-![](ArchitectureSolution.png)
+![](TestTaskDaData.AddressProcessApi/ArchitectureSolution.png)
 
 ## Структура проекта
 
