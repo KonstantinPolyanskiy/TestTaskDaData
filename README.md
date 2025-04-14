@@ -62,7 +62,7 @@ cd TestTaskDaData/TestTaskDaData.AddressProcessApi
 
 ```bash
 docker build -t testtaskdadata . &&
-docker run -d -rm \
+docker run -d \
   -e ASPNETCORE_URLS="http://+:8080" \
   -e DaDataOptions__Token="token_example" \
   -e DaDataOptions__Secret="secret_example" \
