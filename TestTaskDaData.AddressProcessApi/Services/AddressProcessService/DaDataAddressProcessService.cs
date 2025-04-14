@@ -27,7 +27,15 @@ public class DaDataAddressProcessService(IDaDataClient daDataClient, IPopulation
 
         var processedAddress = mapper.Map<ProcessedAddress>(daDataResponse);
         
-        processedAddress.ApproxHouseResidents = daDataResponse?.HouseFlatCount * averagePopulationPerFlat;
+        if (int.TryParse(daDataResponse?.HouseFlatCount, out var flatCount))
+        {
+            processedAddress.ApproxHouseResidents = flatCount * averagePopulationPerFlat;
+        }
+        else
+        {
+            // Если рассчитать не получилось
+            processedAddress.ApproxHouseResidents = null;
+        }
 
         return processedAddress;
     }

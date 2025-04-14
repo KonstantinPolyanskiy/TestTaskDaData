@@ -1,6 +1,0 @@
-@TestTaskDaData.AddressProcessApi_HostAddress = http://localhost:5122
-
-GET {{TestTaskDaData.AddressProcessApi_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

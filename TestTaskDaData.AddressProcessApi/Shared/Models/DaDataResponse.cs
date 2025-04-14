@@ -56,5 +56,5 @@ public class DaDataResponse
     public string? GeoLon { get; set; }
     
     [JsonPropertyName("house_flat_count")]
-    public int? HouseFlatCount { get; set; }
+    public string? HouseFlatCount { get; set; }
 }

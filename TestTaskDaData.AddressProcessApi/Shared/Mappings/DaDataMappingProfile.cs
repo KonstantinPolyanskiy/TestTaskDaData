@@ -12,6 +12,7 @@ public class DaDataResponseMappingProfile : Profile
             .ForMember(dest => dest.Region, opt => opt.MapFrom(src => src.Region))
             .ForMember(dest => dest.City, opt => opt.MapFrom(src => src.City))
             .ForMember(dest => dest.Street, opt => opt.MapFrom(src => src.Street))
-            .ForMember(dest => dest.House, opt => opt.MapFrom(src => src.House));
+            .ForMember(dest => dest.House, opt => opt.MapFrom(src => src.House))
+            .ForMember(dest => dest.ApproxHouseResidents, opt => opt.MapFrom(src => src.HouseFlatCount));
     }
 }
